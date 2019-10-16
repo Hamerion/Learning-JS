@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="font.css">
+		<title>Le createur d'enigme</title>
+	</head>
+	<body>
+		<header>
+			<section id="titre">
+			<h1>Le Sphinx</h1>
+			<p id='soust'> <strong> Le site des énigmes </strong>
+			</section>
+			<section>
+				<img src="img/Sphinx.jpg" alt="Sphinx" id="sphinx">
+			</section>
+		</header>
+		<div class="intro">
+			<p>Bienvenue sur le createur d'énigme!<br>
+			Pour l'utilisé écrivez votre question dans l'emplacement prévue. Pour créez la réponse à cette question indiquez les mots clées que le programme devra chercher.Si vous souhaité que le programme accepte
+			plusieurs réponses créez un nouvel emplacement avec le bouton "ajoutez mots-clez "ou" ".<br>
+			Si vous souhaitez que plusieurs mots-clés apparaissent choisissez"ajoutez mots-clez "et" ".<br>
+		 	Appuyez ensuite sur "soumettre l'énigme" pour cacher les reponses<br>
+			En developement: ajouté "mots-clez "ou" " dans "mots-clez "et" " </p>
+		</div>
+		<div id="question">
+			<label for="kwlabel">quelle est votre question</label>
+			:
+			<input type="text" name="question" class="question" id="questtext" required>
+			<br>
+			<br>
+		</div>
+		<div id="keyword">
+			<form id="and0">
+        <div id="or0">
+				  <label for="kwlabel" id="lab0"> Mots-clés :</label>
+				  <input type="text" name="keyword" class="kw1" id="kw0" required>
+       </div>
+				<br>
+			</form>
+			<br>
+		</div >
+    <div class="technique">
+     <button class="favorite styled"  type="button" id="add"> ajouter mot-clé "ou" </button>
+     <br>
+		 <button class="favorite styled"  type="button" id="addand"> ajouter mot-clé "et" </button>
+		 <br>
+		 <button class="favorite styled"  type="button" id="suprand"> suprimer mot-clé "et" </button>
+		 <br>
+		 <button class="favorite styled"  type="button" id="supror"> suprimer mot-clé "ou" </button>
+		 <br>
+     <button class="favorite styled"  type="button" id="submit"> soumettre l'énigme </button>
+    </div>
+		<br>
+		<div id="reponse">
+			<p id="quest">
+      </p>
+				<br>
+				<label for="resplabel">réponse</label>
+				:
+				<input type="text" name="reponse" class="resp" id="rep" required>
+        <button class="favorite styled"  type="button" id="but"> répondre </button>
+  			<p id="repp"></p>
+      </div>
+
+
+
+      <script src="js/riddlecreat.js"></script>
+			</body>
